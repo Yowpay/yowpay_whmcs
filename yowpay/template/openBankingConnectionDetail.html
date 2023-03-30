@@ -1,0 +1,38 @@
+<div id="yowPayPageOpenBankingConnectionDetail">
+	<div class="connectionDataRow">
+		<div class="rowTitle">{{ACCOUNT_OWNER_TEXT}}</div>
+		<div class="rowData accountOwner"></div>
+	</div>
+	<div class="connectionDataRow">
+		<div class="rowTitle">{{IBAN_TEXT}}</div>
+		<div class="rowData iban">-</div>
+	</div>
+	<div class="connectionDataRow">
+		<div class="rowTitle">{{BIC_SWIFT_TEXT}}</div>
+		<div class="rowData swift">-</div>
+	</div>
+	<div class="connectionDataRow">
+		<div class="rowTitle">{{BANKING_STATUS_TEXT}}</div>
+		<div class="rowData openBankingStatus">
+			<span class="statusImage connected">
+				<img src="{{SUCCESS_IMAGE}}"/>
+			</span>
+			<span class="statusImage notConnected">
+				<img src="{{FAIL_IMAGE}}"/>
+			</span>
+			<span class="statusText"></span>
+		</div>
+	</div>
+	<div class="connectionDataRow">
+		<div class="rowTitle"></div>
+		<div class="rowData dataExplanation isHidden">
+			{{BANKING_CONSENT_STATUS_TEXT}}
+		</div>
+	</div>
+	<div class="connectionDataRow">
+		<div class="rowTitle"></div>
+		<div class="rowData">
+			<a href="https://yowpay.com/account/banking" target="_blank">{{MANAGE_BANKING_CONNECTION_TEXT}}</a>
+		</div>
+	</div>
+</div>

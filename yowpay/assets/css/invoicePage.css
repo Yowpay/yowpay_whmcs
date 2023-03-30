@@ -1,0 +1,33 @@
+#yowPayPaymentForm {
+	padding: 10px;
+}
+
+#yowPayPaymentForm .yowPayLogo {
+	width: 200px;
+}
+
+#yowPayPaymentForm .yowPayPayButton {
+	border: none;
+	background: #7f5a85;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+#yowPayPaymentForm .yowPayPayButton:hover {
+	background: #000000;
+}
+
+#yowPayPaymentForm .title {
+	padding-top: 10px;
+	line-height: 12px;
+}
+
+#yowPayPaymentForm .subTitle {
+	color: #d47078;
+	line-height: 12px;
+}
+
+

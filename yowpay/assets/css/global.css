@@ -1,0 +1,221 @@
+
+/* Workflow explanation */
+
+#yowPayPageWorkflowExplanation {
+	display: flex;
+}
+
+#yowPayPageWorkflowExplanation .explanationRow {
+	width: 180px;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+#yowPayPageWorkflowExplanation .explanationRow .explanationImage img {
+	width: 100px;
+}
+
+#yowPayPageWorkflowExplanation .explanationRow .explanationText {
+	color: #999;
+}
+
+#yowPayPageWorkflowExplanation .explanationSeparator {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #999;
+	padding-top: 50px;
+	width: 50px;
+}
+
+/* Welcome section */
+
+#yowPayPageWelcome {
+	display: flex;
+
+}
+
+#yowPayPageWelcome .logoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 405px;
+	padding: 0 100px;
+	box-sizing: border-box;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+	#yowPayPageWelcome .logoContainer img {
+		width: 100%;
+	}
+
+#yowPayPageWelcome .informationContainer {
+	width: auto;
+}
+
+#yowPayPageWelcome .informationContainer ul {
+	list-style: none;
+}
+
+#yowPayPageWelcome .informationContainer a {
+	color: #0e88b0;
+}
+
+/* Open banking connection detail */
+
+#yowPayPageOpenBankingConnectionDetail {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+}
+
+#yowPayPageOpenBankingConnectionDetail a {
+	color: #0e88b0;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 5px 0;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowTitle {
+	width: 405px;
+	text-align: right;
+	padding: 0 10px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.openBankingStatus {
+	text-transform: uppercase;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.openBankingStatus.layoutConnected {
+	color: #0db04b;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.openBankingStatus .statusImage {
+	display: none;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.openBankingStatus.layoutConnected .statusImage.connected {
+	width: 30px;
+	display: flex;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.openBankingStatus.layoutNotConnected {
+	color: #CC0000;
+}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.openBankingStatus.layoutNotConnected .statusImage.notConnected {
+	width: 30px;
+	display: flex;
+}
+
+	#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.openBankingStatus .statusImage img {
+		width: 100%;
+	}
+
+#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowData.dataExplanation {
+	color: #999999;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+/* Module sub title */
+
+.yowPayModuleSubTitle {
+	font-size: 16px;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+.yowPayModuleSubTitle button {
+	font-weight: normal;
+	font-size: 14px;
+	margin: 0 10px 0 10px;
+}
+
+.yowPayModuleSubTitle .loadingMessage, .yowPayModuleSubTitle .errorMessage, .yowPayModuleSubTitle .successMessage {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.yowPayModuleSubTitle .loadingMessage img, .yowPayModuleSubTitle .errorMessage img, .yowPayModuleSubTitle .successMessage img {
+	width: 18px;
+}
+
+#yowPayLinkButton, #yowPayOpenBankingConnectionButton {
+	padding: 5px 10px;
+}
+
+#yowPayLinkButton[disabled], #yowPayOpenBankingConnectionButton[disabled] {
+	color: #999999;
+}
+
+/* Util */
+
+.isHidden {
+	display: none !important;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+	#yowPayPageWelcome {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#yowPayPageWelcome .logoContainer {
+		width: 100%;
+		padding: 40px 0 10px 0;
+	}
+
+	#yowPayPageWelcome .logoContainer img {
+		max-width: 300px;
+	}
+
+	#yowPayPageWelcome .informationContainer {
+		padding: 20px;
+		text-align: center;
+	}
+
+	.yowPayModuleSubTitle {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.yowPayModuleSubTitle button {
+		margin: 20px;
+		min-width: 300px;
+	}
+
+	#yowPayPageOpenBankingConnectionDetail .connectionDataRow {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	#yowPayPageOpenBankingConnectionDetail .connectionDataRow .rowTitle {
+		text-align: center;
+		padding: 10px 0 5px 0;
+	}
+
+}

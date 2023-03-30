@@ -1,0 +1,35 @@
+{
+	"schema": "1.0",
+	"type": "whmcs-gateways",
+	"name": "yowpay",
+	"license": "MIT",
+	"category": "gateway",
+	"description": {
+		"name": "Yowpay - Peer to Peer SEPA Payments made easy",
+		"tagline": "Accept Instant SEPA transfers directly on your account with automatic reconciliation.",
+		"long": "Yowpay is the perfect alternate payment method for hosting businesses but not only.",
+		"features": [
+			"No chargebacks like with cards",
+			"Higher amounts accepted",
+			"No PSP between you and the client, it is peer to peer, Yowpay is only a gateway. Funds are settlement instantly",
+			"Easy integration with QRCODE instead of copying the bank information",
+			"Automatic reconciliation of incoming transfers on your account and flagging paid invoices likewise with card payments"
+		]
+	},
+	"logo": {
+		"filename": "assets/image/plugin-logo-full.png"
+	},
+	"support": {
+		"homepage": "https:\/\/yowpay.com\/",
+		"learn_more": "https:\/\/yowpay.com\/",
+		"email": "support@yowpay.com",
+		"support_url": "https:\/\/yowpay.com\/contact\/",
+		"docs_url": "https:\/\/yowpay.com\/documentation\/"
+	},
+	"authors": [
+		{
+			"name": "YowPay",
+			"homepage": "https:\/\/yowpay.com\/"
+		}
+	]
+}

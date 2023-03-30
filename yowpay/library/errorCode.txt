@@ -1,0 +1,15 @@
+
+YowPay error code list:
+=======================
+
+110: Invalid currency
+109: Invalid app signature
+108: Invalid app timestamp
+107: Invalid app token
+106: Invalid postback transaction data
+105: Module Not Activated
+104: Invalid postback data
+103: Invalid YowPay response
+102: Invalid YowPay response
+101: Invalid data
+100: Invalid data

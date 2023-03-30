@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/modules/gateways/yowpay/assets/css/invoicePage.css">
+<div class='row'>
+	<div id="yowPayPaymentForm">
+		<img class="yowPayLogo" src="/modules/gateways/yowpay/assets/image/plugin-logo-full.png"/>
+		<p class="title">{{YOWPAY_TAGLINE_1}}</p>
+		<p class="subTitle">{{YOWPAY_TAGLINE_2}}</p>
+		<form method="get" action="https://yowpay.com/transaction/create">
+			<input type="hidden" name="amount" value="{{AMOUNT}}"/>
+			<input type="hidden" name="currency" value="{{CURRENCY}}"/>
+			<input type="hidden" name="orderId" value="{{ORDER_ID}}"/>
+			<input type="hidden" name="language" value="{{LANGUAGE}}"/>
+			<input type="hidden" name="token" value="{{TOKEN}}"/>
+			<input type="hidden" name="timestamp" value="{{TIMESTAMP}}"/>
+			<input type="hidden" name="hash" value="{{HASH}}"/>
+		</form>
+	</div>
+</div>
