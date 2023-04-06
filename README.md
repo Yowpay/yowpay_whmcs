@@ -1,19 +1,19 @@
 # YowPay Third Party Payment Gateway Plugin for WHMCS
 
-Allows you to use YowPay as a payment gateway with your WHMCS instalation.
+Allows you to use YowPay as a payment gateway with your WHMCS installation.
 
-## Instalation
+## Installation
 
 1. Make sure you have WHMCS v8.1+ installed
 2. Download the latest release of this repo
-3. Copy the zip contents into your WHMCS instalation as follows:
+3. Copy the zip contents into your WHMCS installation as follows:
 * copy the `yowpay.php` file to `modules/gateways/yowpay.php`
 * copy the `callback/yowpay.php` file to `modules/gateways/callback/yowpay.php`
 * copy the `yowpay` folder to `modules/gateways/yowpay` 
 
 ## Configuration
 
-1. Login into your WHMCS instalation admin section
+1. Login into your WHMCS installation admin section
 2. Navigate to `System settings` > `Payment Gateways` and select the tab `All Payment Gateways`
 3. Find the `YowPay` payment gateway button and press it
 4. Click on the `Manage Existing Gateways` tab and find the `YowPay` payment gateway section
