@@ -2,7 +2,7 @@
 
 Allows you to use YowPay as a payment gateway with your WHMCS instalation.
 
-## Installation
+## Instalation
 
 1. Make sure you have WHMCS v8.1+ installed
 2. Download the latest release of this repo
@@ -21,7 +21,7 @@ Allows you to use YowPay as a payment gateway with your WHMCS instalation.
 6. Select `EUR` as main currency from the select box `Convert To For Processing` (`EUR` should be already added as a optional currency for this step to work, go to `Payments` > `Currencies` to set this up). If your WHMCS default currency is already `EUR` you can skip this step. 
 7. Once you `Save changes` the module will attempt to link with YowPay servers
 8. If all it's setup correctly you should get a message like `Module linking successful` on your module (use the button `Link module with YowPay` to try again later in case of error)
-9. Your current banking connection status should be also visible trough this module, a message like `Get connection data successful` should be shown if it was retrieved successfuly (use the button `Refresh` to try again later in case of error)
+9. Your current banking connection status should be also visible trough this module, a message like `Get connection data successful` should be shown if it was retrieved successfully (use the button `Refresh` to try again later in case of error)
 
 ### Documentation and support
 
