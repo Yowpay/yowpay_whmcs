@@ -2,7 +2,7 @@
 
 class YowPayApi {
 
-	const API_URL_BASE = 'https://yowpay.com/api';
+	const API_URL_BASE = 'https://api.yowpay.com';
 	const API_TIMEOUT  = 90;
 
 	private $appToken;
@@ -87,7 +87,7 @@ class YowPayApi {
 	public function updateConfig($returnUrl, $cancelUrl, $webhookUrl) {
 
 		return $this->apiCall(
-			'/updateConfig',
+			'/config/update',
 			array(
 				'returnUrl'  => $returnUrl,
 				'cancelUrl'  => $cancelUrl,
@@ -100,7 +100,7 @@ class YowPayApi {
 	public function getBankData() {
 
 		return $this->apiCall(
-			'/getBankData'
+			'/bankData/get'
 		);
 
 	}

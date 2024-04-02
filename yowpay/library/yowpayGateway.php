@@ -44,10 +44,10 @@ class YowPayGateway {
 							'{{PLUGIN_WELCOME_TEXT}}'    => YowPayTemplate::replaceTemplateData(
 								self::$language['pluginWelcomeText'],
 								array(
-									'{{SIGNUP_LINK}}'          => 'https://yowpay.com/signup',
-									'{{ECOMMERCE_ENTRY_LINK}}' => 'https://yowpay.com/account/ecommerce/new',
-									'{{CREDENTIALS_LINK}}'     => 'https://yowpay.com/account/ecommerce',
-									'{{DOCUMENTATION_LINK}}'   => 'https://yowpay.com/documentation',
+									'{{SIGNUP_LINK}}'          => 'https://merchant.yowpay.com/signup',
+									'{{ECOMMERCE_ENTRY_LINK}}' => 'https://merchant.yowpay.com/account/commerce/new',
+									'{{CREDENTIALS_LINK}}'     => 'https://merchant.yowpay.com/account/commerce',
+									'{{DOCUMENTATION_LINK}}'   => 'https://merchant.yowpay.com/documentation',
 								)
 							)
 						)
@@ -194,6 +194,8 @@ class YowPayGateway {
 
 	static function getWebhookUrl() {
 
+		// TODO: remove for the published module
+		//return 'https://tachyean.net/yowpay/callback.php';
 		return self::getWhmcsBaseUrl() . '/modules/gateways/callback/yowpay.php';
 
 	}
